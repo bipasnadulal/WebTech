@@ -1,0 +1,22 @@
+<!-- https://jsonformatter.org/xml-validator for validation checking -->
+
+<college>
+  <student>
+    <name>Ram Karki</name>
+    <faculty>BSc. CSIT</faculty>
+    <semester>5th</semester>
+    <address>
+      <city>Kathmandu</city>
+      <location>Thapathali</location>
+    </address>
+  </student>
+  <student>
+    <name>Abina Poudel</name>
+    <faculty>BSc. CSIT</faculty>
+    <semester>5th</semester>
+    <address>
+      <city>Dang</city>
+      <location>Ghorahi</location>
+    </address>
+  </student>
+</college>

@@ -1,0 +1,20 @@
+<company>
+	<employee>
+		<name>Ram Karki</name>
+		<age>28</age>
+		<position>Software Engineer</position>
+		<address>
+			<city>Kathmandu</city>
+			<location>Thapathali</location>
+		</address>
+	</employee>
+	<employee>
+		<name>Binita Dhakal</name>
+		<age>24</age>
+		<position>UI/UX design</position>
+		<address>
+			<city>Dang</city>
+			<location>Ghorahi</location>
+		</address>
+	</employee>
+</company>
