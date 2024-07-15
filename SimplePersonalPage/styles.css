@@ -1,0 +1,38 @@
+*{
+    margin:0;
+    box-sizing: border-box;
+}
+
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+nav ul{
+    display: flex;
+    flex-wrap: wrap;
+    list-style: none;
+    margin-left:70%;
+}
+
+nav ul a{
+    text-decoration: none;
+    padding: 20px;
+    display: inline-block;
+    font-size: 16px;
+    color:black;
+    letter-spacing: 1px;
+}
+
+.greet{
+    font-size: 18px;
+    font-family:cursive;
+}
+
+.intro{
+    font-size: 30px;
+    font-weight: bold;
+    letter-spacing: 2px;
+}
