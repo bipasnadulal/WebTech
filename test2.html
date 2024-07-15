@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        legend{
+            text-align: center;
+            font-size: 25px;
+            font-weight: 600;
+        }
+        p{
+            text-align: center;
+            font-family:cursive;
+            font-size: 20px;
+            font-weight: 500;
+        }
+        form{
+            display: inline-block;
+            text-align: center;
+        }
+
+        button{
+           background-color: greenyellow;
+           border:none;
+           cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+        <form>
+            <fieldset>
+                <legend>XYZ Software Company</legend>
+                <p>Employee Registration Form</p>
+            
+            <label for="fullnmae">Fullname: </label>
+            <input type="text" name="fullname">
+            <br>
+            <label for="dob">Date of Birth: </label>
+            <input type="date" name="dob">
+            <br>
+            <label for="email">Email: </label>
+            <input type="email">
+            <br>
+            <label for="phonenumber">Phone number: </label>
+            <input type="text">
+            <br>
+            <label for="Paddress">Permanent Address: </label>
+            <input type="text">
+            <br>
+            <label for="Taddress">Temproray Address: </label>
+            <input type="text">
+            <br>
+            <label for="gender">Gender: </label>
+            <input type="radio" name="gender">Male
+            <input type="radio" name="gender">Female
+            <br>
+            <label for="position">Applying position: </label>
+            <input type="text">
+            <br>
+            <label for="worktype">Type of Work: </label>
+            <input type="radio">Temproray
+            <input type="radio">Permanent
+            <input type="radio">Other
+            <br>
+            <label for="resume">Please upload your resume: </label>
+            <input type="file">
+            <br>
+            <label for="information">Cover Letter or Additional Information: </label>
+            <br>
+            <textarea name="information" id="info" cols="30"></textarea>
+            <br>
+            <button>Submit</button>
+        </fieldset>
+        </form>
+    
+    
+</body>
+</html>

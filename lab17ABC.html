@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Lab17</title>
+</head>
+
+<body>
+    <h3>Array</h3>
+  <p id="demo"></p>
+  <br>
+  <h3>Different methods of string</h3>
+  <p id="stringLength"></p>
+  <p id="upperCase"></p>
+  <p id="lowerCase"></p>
+  <p id="concat"></p>
+  <br>
+  <h3>Date Object</h3>
+  <p id="date"></p>
+  <script type="text/javascript">
+    //Using Array
+    const cars = [
+      "BMW",
+      "Mercedes",
+      "Audi"
+    ];
+    document.getElementById('demo').innerHTML = cars
+
+    //using different methods of string
+    let string_input = prompt("Enter any string: ")
+    document.getElementById("stringLength").innerHTML = "The length of the string " + string_input + " is: " + string_input.length
+    document.getElementById("upperCase").innerHTML = "The uppercase of the string " + string_input + " is: " + string_input.toUpperCase()
+    document.getElementById("lowerCase").innerHTML = "The lowercase of the string " + string_input + " is: " + string_input.toLowerCase()
+    let input = prompt("Enter any string: ")
+    document.getElementById("concat").innerHTML = "The concatenation of the string " + string_input + " " + input + " is: " + string_input.concat(" ", input).toUpperCase()
+
+    //date object
+    const d = new Date()
+    document.getElementById('date').innerHTML = d
+    document.write("<h4>getDay(): </h4>")
+    document.write(d.getDay())
+    document.write("<br>")
+    document.write("<h4>getMonth(): </h4>")
+    document.write(d.getMonth())
+  </script>
+</body>
+
+</html>

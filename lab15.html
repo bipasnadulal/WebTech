@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS code using function Lab15</title>
+    <style>
+        #demo{
+            font-size: 25px;
+            font-weight: 600;
+        }
+        button{
+            background-color: green;
+            color:white;
+            width:100px;
+            height:30px;
+            border-radius: 50px;
+            border-style: none;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <h3>Square of a number</h3>
+        <p id="demo"></p>
+        <h1 id="Fname"></h1>
+        
+        <h4>The confirm() method</h4>
+        <button onclick=FunctionConfirm()>Click Here</button>
+        <br>
+        <h4>The alert() method</h4>
+        <button onclick="AlertFunc()">Try it</button>
+        <br>
+        <h4>The prompt() method</h4>
+        <button onclick="PromptFunc()">Click it</button>
+        <br>
+        <p id="Name"></p>
+
+    
+    
+    <script type="text/javascript">
+        function square(n1){
+            return n1*n1;
+        }
+        let result=square(2)
+        document.getElementById('demo').innerHTML=result;
+
+        //Assignment Operator
+        let x=10;
+        x+=10;
+        document.write("Value of x using assignment operator: ",x);
+
+        //Displaying fullname using variable declaration
+        let fullName="Bipasna Dulal";
+        document.getElementById('Fname').innerHTML=fullName;
+
+        //javaScript pop up functions (alert, confirm and prompt)
+        function FunctionConfirm(){
+            confirm("Press a button.\nEither Ok or Cancel");
+        }
+       
+        function AlertFunc(){
+            alert("Hello! I am an alert box.");
+        }
+
+        function PromptFunc(){
+            let name=prompt("Please enter your name");
+            if( name!=null){
+                document.getElementById("Name").innerHTML="Hello " + name + " ," + "How are you?";
+            }
+        }
+    </script>
+</body>
+</html>

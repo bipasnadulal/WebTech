@@ -1,0 +1,89 @@
+<!-- JS using different operator
+Using loops
+using conditional statement -->
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head> 
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS Lab 16</title>
+</head>
+<body>                                               
+    <h3>Assignment Operator: </h3>
+    <p>Assigning the value of x</p>
+    <p id="demo"></p>
+    <br>
+    <h3>Conditional statement for checking even or odd</h3>
+    <p id="check"></p>
+    <h3>Loops:</h3>
+    <h4>For loop to calculate the sum of nth natural numbers: </h4>
+    <p id="sum"></p>
+    <h4>For in loop</h4>
+    <p id="forinLoop"></p>
+   
+    
+    <script type="text/javascript">
+        //Asignment Operator (=) 
+        let x=prompt("please enter any number: ")
+        document.getElementById('demo').innerHTML=x;
+
+        //conditional statement
+        let num=prompt("Enter any number: ")
+        num=Number(num)
+        if(num%2==0){
+            document.getElementById('check').innerHTML="The number " + num + " is even."
+        }
+        else{
+            document.getElementById('check').innerHTML="The number " + num + " is odd."
+        }
+
+        //using Loops
+        //for loop
+        let count, sum=0;
+        let n=prompt("Enter a positive integer")
+        for(count =1; count <=n; count++){
+            sum+=count;
+        }
+        document.getElementById('sum').innerHTML="The sum is: " +sum;
+
+        //while loop
+        n=1
+        document.write("<h4>While Loop</h4>")
+        while(n<6){
+           document.write("NCCS<br>")
+           n++
+        }
+       
+        //do while loop
+        let i=1
+        document.write("<h4>Do While Loop</h4>")
+       do{
+        document.write("CSIT<br>")
+        i++
+       }while(i<5)
+
+       //for in loop
+       let person = {
+        firstName: "Amy",
+        lastName: "Jackson",
+        age: 30,
+        occupation: "Developer"
+    };
+
+    // Create an empty string to hold the result
+    let result = "";
+
+    // Use a for...in loop to iterate over the properties of the object
+    for (let key in person) {
+        result += key + ": " + person[key] + "<br>";
+    }
+
+    // Display the result in the paragraph with id "demo"
+    document.getElementById("forinLoop").innerHTML = result;
+       
+    
+    </script>
+</body>
+</html>

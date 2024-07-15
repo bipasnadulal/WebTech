@@ -1,0 +1,34 @@
+<!DOCTYPE html> 
+<html lang="en"> 
+
+<head> 
+	<!-- Using jquery library -->
+	<script src= 
+"https://code.jquery.com/jquery-git.js"> 
+	</script> 
+	
+	<style>  
+		p { 
+			color: blue; 
+			font-size: 40px; 
+			display: none; 
+		} 
+	</style> 
+</head> 
+
+<body> 
+	<p id="a">Hello</p> 
+	<p id="b">Hello</p> 
+	<p id="c">Hello</p> 
+
+	<script> 
+		// Fast fade in 
+		$("#a").fadeIn("fast") 
+		// Slow fade in 
+		$("#b").fadeIn("slow") 
+		// Fade in in 4s 
+		$("#c").fadeIn(4000) 
+	</script> 
+</body> 
+
+</html>

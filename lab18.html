@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Employee Registration Form</title>
+  <style>
+    legend {
+      text-align: center;
+      font-weight: bold;
+      font-size: 28px;
+    }
+    form {
+      display: inline-block;
+    }
+    h3 {
+      text-align: center;
+    }
+    button{
+        text-align:center;
+        border:1px solid;
+        width:100px;
+        height:30px;
+        border-radius: 50px;
+        background-color: white;
+        font-weight: bold;
+    }
+  </style>
+</head>
+<body>
+  <form name="myForm" onsubmit="return validateForm()">
+    <fieldset>
+      <legend>XYZ Software Company</legend>
+      <h3>Employee Registration Form</h3>
+      <table>
+        <tr>
+          <th>
+            <h2>Personal Information</h2>
+          </th>
+        </tr>
+        <tr>
+          <th>
+            Full Name:
+          </th>
+          <th>
+            <input type="text" name="fname">
+          </th>
+        </tr>
+        <tr>
+          <th>
+            DOB:
+          </th>
+          <th>
+            <input type="date" name="Date">
+          </th>
+        </tr>
+        <tr>
+          <th>
+            Marital Status:
+          </th>
+          <th>
+            <select name="Mstatus">
+              <option value=""></option>
+              <option value="Unmarried">Unmarried</option>
+              <option value="married">Married</option>
+              <option value="divorced">Divorced</option>
+            </select>
+          </th>
+        </tr>
+        <tr>
+          <th>
+            Gender:
+          </th>
+          <th>
+            <input type="radio" name="gender">Male
+            <input type="radio" name="gender">Female
+            <input type="radio" name="gender">Others
+          </th>
+        </tr>
+        <tr>
+          <th>
+            <h2>Contact Information</h2>
+          </th>
+        </tr>
+        <tr>
+          <th>
+            Phone Number:
+          </th>
+          <th>
+            <input type="text" name="phoneNum">
+          </th>
+        </tr>
+        <tr>
+          <th>
+            Email:
+          </th>
+          <th>
+            <input type="email" name="Email" required>
+          </th>
+        </tr>
+        <tr>
+          <th>
+            <h2>Address</h2>
+          </th>
+        </tr>
+        <tr>
+          <th>Local Address</th>
+          <th>
+            <input type="text" name="Laddress" required>
+          </th>
+
+        </tr>
+        <tr>
+          <th>Permanent Address</th>
+          <th>
+            <input type="text" name="Paddress" required>
+          </th>
+        </tr>
+        <tr>
+          <th>
+            <h2>Qualification</h2>
+          </th>
+        </tr>
+        <tr>
+          <th>
+            <input type="checkbox" name="qualification">+2
+            <input type="checkbox" name="qualification">Bachelor
+            <input type="checkbox" name="qualification">Masters
+            <input type="checkbox" name="qualification">PHD
+          </th>
+        </tr>
+        <tr>
+          <th>
+            <button type="submit" value="submit">Submit Form</button>
+          </th>
+        </tr> 
+      </table>
+    </fieldset>
+  </form>
+  <script src="lab18.js"></script>
+</body>
+</html>

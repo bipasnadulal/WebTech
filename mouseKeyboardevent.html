@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script>
+        $(document).ready(function(){
+            $("#hide").click(function(){
+                $("p").hide();
+            })
+            $("#show").click(function(){
+                $("p").show();
+            })
+        })
+        i=0;
+        $(document).ready(function(){
+            $("input").keypress(function(){
+                $("span").text(i+=1)
+            })
+        })
+    </script>
+</head>
+<body> 
+    <h3>Mouse event:</h3>
+    <p>If you click on the "Hide" button, I will disappear.</p>
+    <button id="hide">Hide</button>
+    <button id="show">Show</button>
+    <br>
+    <br>
+    <h3>Keyboard event: Keypress event</h3>
+    <label for="name">Enter your name: </label>
+    <input type="text" name="name">
+    <p>Keypresses: <span>0</span></p>
+</body>
+</html>
